@@ -1,7 +1,10 @@
 
 #include "gtest/gtest.h"
+#include "aoc.h"
 
 TEST(DayOne, dummytest)
 {
-    EXPECT_TRUE(true);
+    std::string filename = "../../test/dayOneTestInput.txt";
+    int result = getNumberOfIncrementsSubmarine(filename);
+    EXPECT_EQ(result, 6);
 }

@@ -4,7 +4,7 @@ set(SOURCE_INCLUDE_DIRS
         ./
         ./inc)
 
-set(AUX_SOURCE)
+set(AUX_SOURCE aoc.cpp)
 
 # Add source to this project's executable.
 add_executable (aoc main.cpp ${AUX_SOURCE})

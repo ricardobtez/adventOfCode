@@ -7,7 +7,7 @@ set (AUX_TEST_FILES
         test_dayOne.cpp)
 
 set(SOURCE_AUX_FILES
-        )
+        ../src/aoc.cpp)
 
 set(AUX_TEST_INCLUDES
         ../src/
