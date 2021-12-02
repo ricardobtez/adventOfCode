@@ -14,6 +14,10 @@ int main()
 void dayOne()
 {
     std::string inputFilename = INPUTS_START_FOLDER + "DayOneInput.txt";
-    int increments = getNumberOfIncrementsSubmarine(inputFilename);
-    std::cout << "The number of increments is:" << std::to_string(increments) << std::endl;
+    int increments = getNumberOfIncrementsStatic(inputFilename);
+    std::cout << "The number of increments in the static window is:" <<
+        std::to_string(increments) << std::endl;
+    increments = getNumberOfIncrementsSliding(inputFilename, 3);
+    std::cout << "The number of increments in the sliding window is:" <<
+        std::to_string(increments) << std::endl;
 }
