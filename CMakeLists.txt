@@ -16,12 +16,11 @@ add_library(project_warnings INTERFACE)
 include(cmake/CompilerWarnings.cmake)
 set_project_warnings(project_warnings)
 
-#add_subdirectory(GoogleTest)
-
 #include sub-projects
 add_subdirectory(src)
 
 if(ENABLE_TESTING)
     enable_testing()
+    add_subdirectory(googletest)
     add_subdirectory(test)
 endif()
